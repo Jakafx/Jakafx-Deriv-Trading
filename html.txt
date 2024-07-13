@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JakaFX Deriv Analysis Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JakaFX Deriv Analysis Tool</h1>
+    </header>
+    <main>
+        <section id="trading-analysis">
+            <h2>Trading Analysis</h2>
+            <div class="symbol-selection">
+                <label for="symbol">Select Symbol:</label>
+                <select id="symbol">
+                    <option value="R_10">Volatility 10 Index</option>
+                    <option value="R_25">Volatility 25 Index</option>
+                    <option value="R_50">Volatility 50 Index</option>
+                    <option value="R_75">Volatility 75 Index</option>
+                    <option value="R_100">Volatility 100 Index</option>
+                </select>
+            </div>
+            <div class="contract-type">
+                <label for="contract">Contract Type:</label>
+                <select id="contract">
+                    <option value="over-under">Over/Under</option>
+                    <option value="rise-fall">Rise/Fall</option>
+                    <option value="matches-differs">Matches/Differs</option>
+                    <option value="even-odd">Even/Odd</option>
+                </select>
+            </div>
+            <div class="ticks-input">
+                <label for="ticks">Number of Ticks:</label>
+                <input type="number" id="ticks" min="1" value="1">
+            </div>
+            <button id="calculate">Calculate Percentage</button>
+            <div id="result"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 JakaFX Deriv Analysis Tool</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
