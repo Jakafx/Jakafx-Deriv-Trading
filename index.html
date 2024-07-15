@@ -3,22 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jakafx Deriv Trading</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Login - Jakafx Deriv Trading</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Jakafx Deriv Trading</h1>
+        <div class="container">
+            <h1>Welcome to Jakafx Deriv Trading</h1>
+        </div>
     </header>
-    <main>
-        <section id="trading-analysis">
-            <h2>Trading Analysis</h2>
-            <!-- Add your content here -->
-        </section>
-    </main>
+
+    <section class="container">
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="return validateForm()">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Jakafx Deriv Trading</p>
+        <div class="container">
+            <p>&copy; 2024 Jakafx Deriv Trading. All rights reserved.</p>
+        </div>
     </footer>
-    <script src="js/script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Jakafx Deriv Trading</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to Jakafx Deriv Trading</h1>
+        </div>
+    </header>
+
+    <section class="container">
+        <h2>Sign Up</h2>
+        <form id="signupForm" onsubmit="return validateForm()">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+
+            <label for="confirmPassword">Confirm Password:</label><br>
+            <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Jakafx Deriv Trading. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
